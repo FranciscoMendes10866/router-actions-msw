@@ -5,7 +5,7 @@ export const loader = async () => {
   try {
     const res = await fetch("/mocked-api/post");
     data = await res.json();
-  } catch (error) {
+  } catch {
     data = null;
   }
   return data;
